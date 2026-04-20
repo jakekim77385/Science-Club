@@ -324,7 +324,7 @@ input, select, button { font-family: inherit; }
 /* ── Big full-width Science Club title ── */
 .hero-title-big {
   font-family: 'Outfit', sans-serif;
-  font-size: clamp(3.5rem, 8vw, 7rem);
+  font-size: clamp(5rem, 11vw, 10rem);
   font-weight: 900;
   line-height: 1;
   letter-spacing: -0.02em;
@@ -333,7 +333,7 @@ input, select, button { font-family: inherit; }
   -webkit-text-fill-color: transparent;
   background-clip: text;
   width: 100%;
-  margin-bottom: 16px;
+  margin-bottom: 48px;     /* push content further below */
 }
 /* ── Subtitle tagline ── */
 .hero-tagline {
