@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Balboa Academy Science Club</title>
+  <meta name="description" content="A student-led community at Balboa Academy dedicated to exploring science beyond the classroom — through competitions, outreach, and hands-on discovery." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Montserrat:wght@700;800;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ── CANVAS PARTICLE BACKGROUND ── -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- ── NAVIGATION ── -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo" id="nav-logo-link">
+        <img src="Logo.jpeg" alt="Science Club" class="nav-logo-img" />
+        <div class="nav-logo-divider"></div>
+        <img src="balboa_logo.png" alt="Balboa Academy" class="nav-balboa-img" />
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About Us</a></li>
+        <li><a href="#values" class="nav-link">What We Do</a></li>
+        <li><a href="#events" class="nav-link">Events</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#team" class="nav-link">Team</a></li>
+        <li><a href="#join" class="nav-link nav-cta">Join Us</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section id="home" class="hero">
+    <!-- Background slideshow -->
+    <div class="hero-slides" aria-hidden="true">
+      <div class="hero-slide active" style="background-image:url('bg/home1.jpeg')"></div>
+      <div class="hero-slide" style="background-image:url('bg/home2.jpeg')"></div>
+      <div class="hero-slide" style="background-image:url('bg/home3.jpeg')"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title-big">Science Club</h1>
+      <p class="hero-tagline">Where Curiosity Becomes Discovery</p>
+      <p class="hero-sub">
+        A student-led community dedicated to exploring the wonders of science
+        beyond the classroom. Whether you're passionate about chemistry, biology,
+        physics, or just curious about how the world works, our club is a space
+        where curiosity is celebrated and discovery is shared.
+      </p>
+      <div class="hero-stats">
+        <div class="stat-card">
+          <span class="stat-num" data-target="2022" data-suffix="">2022</span>
+          <span class="stat-label">Founded</span>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num-row"><span class="stat-num" data-target="70">0</span><span class="stat-suffix">+</span></div>
+          <span class="stat-label">Members</span>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num-row"><span class="stat-num" data-target="5">0</span><span class="stat-suffix">+</span></div>
+          <span class="stat-label">Partner Schools</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT US ── -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-label">About Us</div>
+      <h2 class="section-title">More Than Just a <span class="gradient-text">Club</span></h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="about-lead">
+            Founded in 2022, the Balboa Academy Science Club is a student-led
+            community dedicated to exploring the wonders of science beyond
+            the classroom.
+          </p>
+          <p>
+            Whether you're passionate about chemistry, biology, physics, or
+            just curious about how the world works — our club is a space where
+            curiosity is celebrated and discovery is shared.
+          </p>
+          <div class="insta-link-wrap">
+            <a href="https://instagram.com/scienceclubbalboa" target="_blank" rel="noopener" class="insta-link" id="instagram-link">
+              <span class="insta-icon">📸</span>
+              <span>Follow us on Instagram</span>
+              <span class="insta-handle">@scienceclubbalboa</span>
+            </a>
+          </div>
+          <div class="about-pillars">
+            <div class="pillar" id="pillar-excellence">
+              <div class="pillar-icon">🏆</div>
+              <div>
+                <strong>Academic Excellence</strong>
+                <p>Competitions that turn learning into something thrilling</p>
+              </div>
+            </div>
+            <div class="pillar" id="pillar-discovery">
+              <div class="pillar-icon">🔬</div>
+              <div>
+                <strong>Passion for Discovery</strong>
+                <p>Hands-on experiences that spark genuine wonder</p>
+              </div>
+            </div>
+            <div class="pillar" id="pillar-community">
+              <div class="pillar-icon">🌎</div>
+              <div>
+                <strong>Community &amp; Outreach</strong>
+                <p>Making science accessible to schools across Panama</p>
+              </div>
+            </div>
+            <div class="pillar" id="pillar-mentorship">
+              <div class="pillar-icon">🤝</div>
+              <div>
+                <strong>Mentorship &amp; Collaboration</strong>
+                <p>Sharing knowledge across grades, clubs, and schools</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-card-stack">
+          <div class="a-card card-top" id="card-mission">
+            <div class="a-card-icon">🌟</div>
+            <h3>Our Mission</h3>
+            <p>To cultivate scientific thinking and inspire the next generation of innovators, researchers, and problem-solvers right here in Panama.</p>
+          </div>
+          <div class="a-card card-bottom" id="card-vision">
+            <div class="a-card-icon">🚀</div>
+            <h3>Our Vision</h3>
+            <p>A school community where every student — and every school across Panama — has experienced the thrill of discovery.</p>
+          </div>
+          <div class="a-card card-gold" id="card-founded">
+            <div class="a-card-icon">📅</div>
+            <h3>Est. 2022</h3>
+            <p>Three years of experiments, competitions, outreach events, and science that goes beyond the textbook.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── WHAT WE DO (4 VALUES) ── -->
+  <section id="values" class="section programs-section">
+    <div class="container">
+      <div class="section-label">What We Do</div>
+      <h2 class="section-title">Five Ways We <span class="gradient-text">Make It Happen</span></h2>
+      <p class="section-sub">Everything we do flows from these core commitments</p>
+      <div class="programs-grid values-grid">
+
+        <div class="prog-card" id="val-excellence">
+          <div class="prog-glow"></div>
+          <div class="prog-icon">🏆</div>
+          <h3>Academic Excellence</h3>
+          <p>We challenge ourselves and our peers to think critically and stretch the limits of what we know. Through Science Trivia, Jeopardy, and Battle of the Geniuses, we turn learning into something thrilling and rewarding.</p>
+          <div class="prog-tag">Competitions</div>
+        </div>
+
+        <div class="prog-card" id="val-discovery">
+          <div class="prog-glow"></div>
+          <div class="prog-icon">🔬</div>
+          <h3>Passion for Discovery</h3>
+          <p>Science isn't just a subject — it's an adventure. From live volcano eruptions to microscope labs and VR explorations, we create hands-on experiences that spark wonder and keep our love for STEM alive.</p>
+          <div class="prog-tag">Hands-On Labs</div>
+        </div>
+
+        <div class="prog-card" id="val-outreach">
+          <div class="prog-glow"></div>
+          <div class="prog-icon">🌎</div>
+          <h3>Community &amp; Outreach</h3>
+          <p>We believe science should be for everyone. By inviting underserved schools from across Panama to experience our labs, we work to make science a bridge — not a barrier.</p>
+          <div class="prog-tag">School Invites</div>
+        </div>
+
+        <div class="prog-card" id="val-mentorship">
+          <div class="prog-glow"></div>
+          <div class="prog-icon">🤝</div>
+          <h3>Mentorship &amp; Collaboration</h3>
+          <p>From guiding elementary students through their first experiments to partnering with clubs like WiSTEM, we build a community where knowledge is passed down, shared, and multiplied.</p>
+          <div class="prog-tag">Collaboration</div>
+        </div>
+
+        <div class="prog-card val-fundraising-card" id="val-fundraising">
+          <div class="prog-glow"></div>
+          <div class="prog-icon">🍕</div>
+          <h3>Fundraising &amp; Club Spirit</h3>
+          <p>From Pizza Sales and Popcorn Sales to Korean Food Days and Free Clothes Day — we keep the club running and the community connected through fun, student-led fundraising that brings the whole school together.</p>
+          <div class="prog-tag">Community Fun</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EVENTS ── -->
+  <section id="events" class="section events-section">
+    <div class="container">
+      <div class="section-label">Our Signature Events</div>
+      <h2 class="section-title">Where the <span class="gradient-text">Action Happens</span></h2>
+
+      <div class="events-cards">
+
+        <div class="event-card" id="event-trivia">
+          <div class="event-card-top">
+            <div class="event-card-icon">🧠</div>
+            <div class="event-card-tag workshop">Annual</div>
+          </div>
+          <h3>Science Trivia &amp; Jeopardy</h3>
+          <p>A high-energy academic showdown where Balboa Academy students go head-to-head answering science and math questions. With extra credit often on the line, it's as competitive as it is educational — and always a crowd favorite.</p>
+          <div class="event-card-footer">
+            <span class="event-card-detail">📍 Balboa Academy</span>
+            <span class="event-card-detail">🎯 All Grades</span>
+          </div>
+        </div>
+
+        <div class="event-card featured" id="event-invite">
+          <div class="event-card-top">
+            <div class="event-card-icon">🏫</div>
+            <div class="event-card-tag outreach">Outreach</div>
+          </div>
+          <h3>School Invite</h3>
+          <p>Every year, we host students from a low-income Panamanian school for a full day of immersive science — chemistry, biology, and physics stations, all designed to bring the thrill of discovery to students who otherwise wouldn't have access.</p>
+          <div class="event-highlight">
+            <div class="highlight-year">2025 Highlight</div>
+            <p>On October 28th, we welcomed <strong>La Escuela Bilingüe Kuna Negra</strong> for a day packed with erupting volcanoes, milk-and-soap reactions, the egg drop challenge, microscope investigations, and even a VR experience. Thanks to the <a href="https://instagram.com/parentsassociationba" target="_blank">@parentsassociationba</a> for sponsoring, and to Ms. Mendoza for her generous donation of school supplies.</p>
+          </div>
+          <div class="event-card-footer">
+            <span class="event-card-detail">📍 Balboa Academy Labs</span>
+            <span class="event-card-detail">📅 Oct 28, 2025</span>
+          </div>
+        </div>
+
+        <div class="event-card" id="event-botg">
+          <div class="event-card-top">
+            <div class="event-card-icon">🎓</div>
+            <div class="event-card-tag competition">Competition</div>
+          </div>
+          <h3>Battle of the Geniuses</h3>
+          <p>What began in 2023 as an in-house Balboa Academy competition has grown into one of Panama's most exciting interschool academic events. Since 2024, hosted at <strong>Teatro Ateneo, Ciudad del Saber</strong>, four schools compete across math, science, general knowledge, music, history, arts, and geography — blending brainpower with teamwork.</p>
+          <div class="botg-years">
+            <div class="botg-year">
+              <span class="botg-year-num">2023</span>
+              <span class="botg-year-label">In-house · BA</span>
+            </div>
+            <div class="botg-year">
+              <span class="botg-year-num">2024</span>
+              <span class="botg-year-label">Interschool · 4 Schools</span>
+            </div>
+            <div class="botg-year">
+              <span class="botg-year-num">2025</span>
+              <span class="botg-year-label">Teatro Ateneo</span>
+            </div>
+          </div>
+          <div class="event-card-footer">
+            <span class="event-card-detail">📍 Teatro Ateneo, CdS</span>
+            <span class="event-card-detail">🏫 4 Schools</span>
+          </div>
+        </div>
+
+        <div class="event-card" id="event-steam">
+          <div class="event-card-top">
+            <div class="event-card-icon">⚗️</div>
+            <div class="event-card-tag collab">Collaboration</div>
+          </div>
+          <h3>Elementary STEAM Day</h3>
+          <p>An annual tradition hosted by the high school Science Club in collaboration with the <strong>WiSTEM club</strong>. Elementary students dive into chemistry, biology, and physics activities designed to ignite early curiosity in STEM — helping them see science not as a subject, but as something they can do, love, and own.</p>
+          <div class="event-card-footer">
+            <span class="event-card-detail">🤝 With WiSTEM Club</span>
+            <span class="event-card-detail">🎯 Elementary Students</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── GALLERY ── -->
+  <section id="gallery" class="section gallery-section">
+    <div class="container">
+      <div class="section-label">Follow Our Journey</div>
+      <h2 class="section-title">Life Inside the <span class="gradient-text">Science Club</span></h2>
+      <p class="section-sub">Real moments from our labs, competitions, and outreach events</p>
+
+      <div class="gallery-grid">
+
+        <div class="gallery-tile tile-wide" id="gtile-invite">
+          <div class="gallery-tile-bg" style="background: linear-gradient(135deg, rgba(245,197,24,0.15), rgba(0,229,255,0.08));"></div>
+          <div class="gallery-tile-content">
+            <div class="gallery-tile-icon">🏫</div>
+            <div class="gallery-tile-tag">Oct 28, 2025</div>
+            <h3>School Invite — Kuna Negra</h3>
+            <p>Volcano eruptions, microscope labs, egg drop challenge &amp; VR experience with students from Escuela Bilingüe Kuna Negra.</p>
+          </div>
+        </div>
+
+        <div class="gallery-tile" id="gtile-botg">
+          <div class="gallery-tile-bg" style="background: linear-gradient(135deg, rgba(168,85,247,0.15), rgba(59,130,246,0.08));"></div>
+          <div class="gallery-tile-content">
+            <div class="gallery-tile-icon">🎓</div>
+            <div class="gallery-tile-tag">2023 · 2024 · 2025</div>
+            <h3>Battle of the Geniuses</h3>
+            <p>From in-house competition to Teatro Ateneo, Ciudad del Saber — three years of Panama's biggest academic showdown.</p>
+          </div>
+        </div>
+
+        <div class="gallery-tile" id="gtile-trivia">
+          <div class="gallery-tile-bg" style="background: linear-gradient(135deg, rgba(0,229,255,0.12), rgba(16,185,129,0.08));"></div>
+          <div class="gallery-tile-content">
+            <div class="gallery-tile-icon">🧠</div>
+            <div class="gallery-tile-tag">Annual</div>
+            <h3>Science &amp; Math Trivia</h3>
+            <p>High-energy Jeopardy-style showdowns bringing out the competitive spirit in Balboa Academy students.</p>
+          </div>
+        </div>
+
+        <div class="gallery-tile" id="gtile-steam">
+          <div class="gallery-tile-bg" style="background: linear-gradient(135deg, rgba(16,185,129,0.15), rgba(0,229,255,0.06));"></div>
+          <div class="gallery-tile-content">
+            <div class="gallery-tile-icon">⚗️</div>
+            <div class="gallery-tile-tag">w/ WiSTEM</div>
+            <h3>Elementary STEAM Day</h3>
+            <p>Partnering with WiSTEM to bring chemistry, biology, and physics adventures to younger students.</p>
+          </div>
+        </div>
+
+        <div class="gallery-tile" id="gtile-fundraising">
+          <div class="gallery-tile-bg" style="background: linear-gradient(135deg, rgba(245,197,24,0.1), rgba(168,85,247,0.06));"></div>
+          <div class="gallery-tile-content">
+            <div class="gallery-tile-icon">🍕</div>
+            <div class="gallery-tile-tag">Fundraising</div>
+            <h3>Sales &amp; Club Spirit</h3>
+            <p>Pizza sales, popcorn sales, Korean food days, and free clothes day — keeping the club alive and the school engaged.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="gallery-insta-cta">
+        <div class="gallery-insta-text">
+          <span class="gallery-insta-icon">📸</span>
+          <div>
+            <strong>See all our photos &amp; videos</strong>
+            <p>186 followers · 76 posts · All the moments that matter</p>
+          </div>
+        </div>
+        <a href="https://instagram.com/scienceclubbalboa" target="_blank" rel="noopener" class="btn btn-primary" id="gallery-insta-btn">
+          Follow @scienceclubbalboa
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── TEAM ── -->
+  <section id="team" class="section team-section">
+    <div class="container">
+      <div class="section-label">The People Behind It</div>
+      <h2 class="section-title">Our <span class="gradient-text">Team</span></h2>
+      <p class="section-sub">Student-led, faculty-supported — since 2022</p>
+
+      <!-- Faculty Sponsor -->
+      <div class="sponsor-card" id="team-sponsor">
+        <div class="sponsor-avatar">
+          <img src="Ms_Ellis.jpeg" alt="Ms. Ellis" class="sponsor-photo" />
+        </div>
+        <div class="sponsor-info">
+          <div class="team-role-badge">Faculty Sponsor</div>
+          <h3>Ms. Ellis</h3>
+          <p>Science teacher and dedicated mentor who has supported the Balboa Academy Science Club since its founding in 2022.</p>
+        </div>
+      </div>
+
+      <!-- Officer History Table -->
+      <div class="officers-wrap">
+        <h3 class="officers-title">Officers Through the Years</h3>
+        <p class="officers-sub">Positions: President · Vice President · Secretary · Treasurer · Public Relations</p>
+        <div class="officers-grid">
+
+          <div class="officer-year-card" id="officers-2223">
+            <div class="officer-year-header">
+              <span class="officer-year-label">2022 – 2023</span>
+              <span class="officer-founding-badge">Founding Year</span>
+            </div>
+            <div class="officer-slots">
+              <div class="officer-slot"><span class="slot-role">President</span><span class="slot-name tba">—</span></div>
+              <div class="officer-slot"><span class="slot-role">Vice President</span><span class="slot-name tba">—</span></div>
+              <div class="officer-slot"><span class="slot-role">Secretary</span><span class="slot-name tba">—</span></div>
+              <div class="officer-slot"><span class="slot-role">Treasurer</span><span class="slot-name tba">—</span></div>
+              <div class="officer-slot"><span class="slot-role">Public Relations</span><span class="slot-name tba">—</span></div>
+            </div>
+          </div>
+
+          <div class="officer-year-card" id="officers-2324">
+            <div class="officer-year-header">
+              <span class="officer-year-label">2023 – 2024</span>
+            </div>
+            <div class="officer-slots">
+              <div class="officer-slot"><span class="slot-role">President</span><span class="slot-name tba">—</span></div>
+              <div class="officer-slot"><span class="slot-role">Vice President</span><span class="slot-name tba">—</span></div>
+              <div class="officer-slot"><span class="slot-role">Secretary</span><span class="slot-name tba">—</span></div>
+              <div class="officer-slot"><span class="slot-role">Treasurer</span><span class="slot-name tba">—</span></div>
+              <div class="officer-slot"><span class="slot-role">Public Relations</span><span class="slot-name tba">—</span></div>
+            </div>
+          </div>
+
+          <div class="officer-year-card" id="officers-2425">
+            <div class="officer-year-header">
+              <span class="officer-year-label">2024 – 2025</span>
+            </div>
+            <div class="officer-slots">
+              <div class="officer-slot"><span class="slot-role">President</span><span class="slot-name tba">—</span></div>
+              <div class="officer-slot"><span class="slot-role">Vice President</span><span class="slot-name tba">—</span></div>
+              <div class="officer-slot"><span class="slot-role">Secretary</span><span class="slot-name tba">—</span></div>
+              <div class="officer-slot"><span class="slot-role">Treasurer</span><span class="slot-name tba">—</span></div>
+              <div class="officer-slot"><span class="slot-role">Public Relations</span><span class="slot-name tba">—</span></div>
+            </div>
+          </div>
+
+          <div class="officer-year-card" id="officers-2526">
+            <div class="officer-year-header">
+              <span class="officer-year-label">2025 – 2026</span>
+              <span class="officer-current-badge">Current</span>
+            </div>
+            <div class="officer-slots">
+              <div class="officer-slot"><span class="slot-role">President</span><span class="slot-name">Lucy Noh</span></div>
+              <div class="officer-slot"><span class="slot-role">Vice President</span><span class="slot-name">Anna Ardón</span></div>
+              <div class="officer-slot"><span class="slot-role">Secretary</span><span class="slot-name">Alice Noh</span></div>
+              <div class="officer-slot"><span class="slot-role">Treasurer</span><span class="slot-name">Monica Williams</span></div>
+              <div class="officer-slot"><span class="slot-role">Public Relations</span><span class="slot-name">Raquel Ardón</span></div>
+            </div>
+          </div>
+
+          <div class="officer-year-card election-card" id="officers-2627">
+            <div class="officer-year-header">
+              <span class="officer-year-label">2026 – 2027</span>
+              <span class="officer-election-badge">🗳️ Election Season</span>
+            </div>
+            <div class="officer-slots">
+              <div class="officer-slot"><span class="slot-role">President</span><span class="slot-name election-pending">Candidates Running</span></div>
+              <div class="officer-slot"><span class="slot-role">Vice President</span><span class="slot-name tba">TBA</span></div>
+              <div class="officer-slot"><span class="slot-role">Secretary</span><span class="slot-name tba">TBA</span></div>
+              <div class="officer-slot"><span class="slot-role">Treasurer</span><span class="slot-name tba">TBA</span></div>
+              <div class="officer-slot"><span class="slot-role">Public Relations</span><span class="slot-name tba">TBA</span></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── JOIN ── -->
+  <section id="join" class="section join-section">
+    <div class="container">
+      <div class="join-box">
+        <div class="join-left">
+          <div class="section-label">Ready to Start?</div>
+          <h2 class="section-title">Join the <span class="gradient-text">Science Club</span></h2>
+          <p>Open to all Balboa Academy students. No prior science experience required — just a love of learning and a curious mind.</p>
+          <ul class="join-perks">
+            <li>✅ Free membership for all BA students</li>
+            <li>✅ Hands-on experiments &amp; lab access</li>
+            <li>✅ Science competitions &amp; events</li>
+            <li>✅ Community outreach opportunities</li>
+            <li>✅ Counts toward community service hours</li>
+          </ul>
+          <a href="https://instagram.com/scienceclubbalboa" target="_blank" rel="noopener" class="insta-link insta-link-lg" id="insta-join-link">
+            <span class="insta-icon">📸</span>
+            <span>@scienceclubbalboa</span>
+          </a>
+        </div>
+        <div class="join-right">
+          <form id="join-form" class="join-form">
+            <h3>Express Your Interest</h3>
+            <div class="form-group">
+              <label for="form-name">Full Name</label>
+              <input type="text" id="form-name" placeholder="Your full name" required />
+            </div>
+            <div class="form-group">
+              <label for="form-grade">Grade</label>
+              <select id="form-grade" required>
+                <option value="" disabled selected>Select your grade</option>
+                <option value="6">Grade 6</option>
+                <option value="7">Grade 7</option>
+                <option value="8">Grade 8</option>
+                <option value="9">Grade 9</option>
+                <option value="10">Grade 10</option>
+                <option value="11">Grade 11</option>
+                <option value="12">Grade 12</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="form-interest">Main Interest</label>
+              <select id="form-interest" required>
+                <option value="" disabled selected>What excites you most?</option>
+                <option>Academic Competitions</option>
+                <option>Hands-On Experiments</option>
+                <option>Community Outreach</option>
+                <option>Mentorship &amp; Teaching</option>
+                <option>All of the above!</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="form-email">School Email</label>
+              <input type="email" id="form-email" placeholder="your.name@balboaacademy.org" required />
+            </div>
+            <button type="submit" id="join-submit-btn" class="btn btn-primary btn-full">Submit Interest Form 🚀</button>
+          </form>
+          <div id="form-success" class="form-success hidden">
+            <div class="success-icon">🎉</div>
+            <h3>Welcome to Science Club!</h3>
+            <p>We'll reach out soon with details about our next meeting. See you in the lab!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="Logo.jpeg" alt="Balboa Academy Science Club" class="footer-logo-img" />
+          </div>
+          <p>Balboa Academy Science Club<br />Panama City, Panama · Est. 2022</p>
+          <a href="https://instagram.com/scienceclubbalboa" target="_blank" rel="noopener" class="footer-insta" id="footer-instagram">
+            📸 @scienceclubbalboa
+          </a>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#values">What We Do</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#team">Our Team</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Events</h4>
+          <p>🧠 Science Trivia / Jeopardy</p>
+          <p>🏫 School Invite</p>
+          <p>🎓 Battle of the Geniuses</p>
+          <p>⚗️ Elementary STEAM Day</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Balboa Academy Science Club · Panama City, Panama · <em>Ad Astra Per Aspera</em></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
