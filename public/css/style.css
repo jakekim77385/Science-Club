@@ -324,11 +324,11 @@ input, select, button { font-family: inherit; }
 }
 /* ── Big full-width Science Club title ── */
 .hero-title-big {
-  font-family: 'Montserrat', 'Outfit', sans-serif;
-  font-size: clamp(2.8rem, 6.5vw, 5.5rem);
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(4rem, 10vw, 8rem);
   font-weight: 900;
-  line-height: 1.05;
-  letter-spacing: -0.01em;
+  line-height: 1;
+  letter-spacing: -0.02em;
   background: var(--grad-main);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
