@@ -544,22 +544,7 @@ input, select, button { font-family: inherit; }
   transition: var(--transition);
   cursor: default;
 }
-.prog-glow {
-  position: absolute;
-  inset: -1px;
-  border-radius: inherit;
-  background: var(--grad-main);
-  opacity: 0;
-  transition: opacity var(--transition);
-  z-index: 0;
-  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  mask-composite: exclude;
-  -webkit-mask-composite: destination-out;
-  padding: 1px;
-  pointer-events: none;
-}
 .prog-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-glow); border-color: var(--border-glow); }
-.prog-card:hover .prog-glow { opacity: 1; }
 .prog-card > * { position: relative; z-index: 1; }
 .prog-card h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: 10px; }
 .prog-card p { color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 20px; line-height: 1.6; }
