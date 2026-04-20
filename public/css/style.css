@@ -274,7 +274,7 @@ input, select, button { font-family: inherit; }
   position: absolute;
   inset: 0;
   background-size: cover;
-  background-position: left center;   /* anchor left — fills left edge */
+  background-position: 60% center;   /* shifted right of center */
   opacity: 0;
   transition: opacity 1.4s ease-in-out;
 }
@@ -300,9 +300,10 @@ input, select, button { font-family: inherit; }
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  max-width: 100%;
+  max-width: 1140px;       /* same as nav-inner */
   width: 100%;
-  padding: 0 48px 0 32px;   /* left: 32px — pushed to left edge */
+  margin: 0 auto;          /* center like nav — aligns left edge with logo */
+  padding: 0 24px;         /* same as nav-inner */
   box-sizing: border-box;
 }
 .hero-badge {
