@@ -287,9 +287,9 @@ input, select, button { font-family: inherit; }
   z-index: 1;
   background: linear-gradient(
     to right,
-    rgba(5, 16, 31, 0.70) 0%,
-    rgba(5, 16, 31, 0.45) 50%,
-    rgba(5, 16, 31, 0.65) 100%
+    rgba(5, 16, 31, 0.80) 0%,
+    rgba(5, 16, 31, 0.58) 50%,
+    rgba(5, 16, 31, 0.75) 100%
   );
 }
 
