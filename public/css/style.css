@@ -249,7 +249,9 @@ input, select, button { font-family: inherit; }
 
 /* ── HERO ────────────────────────────────────────────── */
 .hero {
-  min-height: auto;
+  height: 100vh;
+  height: 100svh;          /* Safari: accounts for browser chrome */
+  min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
   align-items: flex-start;
@@ -258,7 +260,8 @@ input, select, button { font-family: inherit; }
   margin: 0;
   position: relative;
   z-index: 1;
-  overflow: hidden;
+  overflow: hidden;        /* hides image bottom, keeps it in frame */
+  box-sizing: border-box;
 }
 
 /* ── Slideshow layers ── */
