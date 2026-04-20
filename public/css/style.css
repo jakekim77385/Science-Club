@@ -255,7 +255,7 @@ input, select, button { font-family: inherit; }
   display: grid;
   grid-template-columns: 1fr;
   align-items: flex-start;
-  padding: 100px 0 60px;
+  padding: 115px 0 60px;
   max-width: 100%;
   margin: 0;
   position: relative;
